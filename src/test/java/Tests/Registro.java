@@ -34,107 +34,124 @@ public class Registro {
 	public void testEditarCampoFirstName() throws InterruptedException {
 		    // Chamando o step "Metodo"
 			registroPage.editarCampoFirstName();
-		}
-	
-	@Test
-	public void testEditarCampoLastName() throws InterruptedException {
-		    // Chamando o step
 			registroPage.editarCampoLastName();
-		}
-	
-	@Test
-	public void testEditarCampoAddress() throws InterruptedException {
-		    // Chamando o step
 			registroPage.editarCampoAddress();
-		}
-	
-	@Test
-	public void testEditarCampoEmailAddress() throws InterruptedException {
-		    // Chamando o step
 			registroPage.editarCampoEmailAddress();
-		}
-	
-	@Test
-	public void testEditarCampoPhone() throws InterruptedException {
-		    // Chamando o step
 			registroPage.editarCampoPhone();
-		}
-	
-	@Test
-	public void testEditarCampoGender() throws InterruptedException {
-		    // Chamando o step
 			registroPage.editarCampoGender();
-		}
-	
-	@Test
-	public void testEditarCampoCountry() throws InterruptedException {
-		    // Chamando o step
-			registroPage.editarCampoCountry();
-		}
-	
-	@Test
-	public void testEntrarComPais() throws InterruptedException {
-		    // Chamando o step
+//			registroPage.editarCampoCountry();
 			registroPage.entrarComPais();
-		}
-	
-	@Test
-	public void testEditarCampoYear() throws InterruptedException {
-		    // Chamando o step
-			registroPage.editarCampoYear();
-		}
-	
-	@Test
-	public void testEntrarComAno() throws InterruptedException {
-		    // Chamando o step
+//			registroPage.editarCampoYear();
 			registroPage.entrarComAno();
-		}
-	
-	@Test
-	public void testEditarCampoMonth() throws InterruptedException {
-		    // Chamando o step
-			registroPage.editarCampoMonth();
-		}
-	
-	@Test
-	public void testEntrarComMes() throws InterruptedException {
-		    // Chamando o step
+//			registroPage.editarCampoMonth();
 			registroPage.entrarComMes();
-		}
-	
-	@Test
-	public void testEditarCampoDay() throws InterruptedException {
-		    // Chamando o step
-			registroPage.editarCampoDay();
-		}
-	
-	@Test
-	public void testEntrarComDia() throws InterruptedException {
-		    // Chamando o step
+//			registroPage.editarCampoDay();
 			registroPage.entrarComDia();
-		}
-	
-	@Test
-	public void testEditarCampoPassword() throws InterruptedException {
-		    // Chamando o step
 			registroPage.editarCampoPassword();
-		}
-	
-	@Test
-	public void testEditarCampoConfirmPassword() throws InterruptedException {
-		    // Chamando o step
 			registroPage.editarCampoConfirmPassword();
+			registroPage.clicarBotaoSubmit();
+			
 		}
 	
-	@Test
-	public void testclicarBotaoSubmit() throws InterruptedException {
-		    // Chamando o step
-			registroPage.clicarBotaoSubmit();
-		}
+//	@Test
+//	public void testEditarCampoLastName() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.editarCampoLastName();
+//		}
+//	
+//	@Test
+//	public void testEditarCampoAddress() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.editarCampoAddress();
+//		}
+//	
+//	@Test
+//	public void testEditarCampoEmailAddress() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.editarCampoEmailAddress();
+//		}
+//	
+//	@Test
+//	public void testEditarCampoPhone() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.editarCampoPhone();
+//		}
+//	
+//	@Test
+//	public void testEditarCampoGender() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.editarCampoGender();
+//		}
+//	
+//	@Test
+//	public void testEditarCampoCountry() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.editarCampoCountry();
+//		}
+//	
+//	@Test
+//	public void testEntrarComPais() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.entrarComPais();
+//		}
+//	
+//	@Test
+//	public void testEditarCampoYear() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.editarCampoYear();
+//		}
+//	
+//	@Test
+//	public void testEntrarComAno() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.entrarComAno();
+//		}
+//	
+//	@Test
+//	public void testEditarCampoMonth() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.editarCampoMonth();
+//		}
+//	
+//	@Test
+//	public void testEntrarComMes() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.entrarComMes();
+//		}
+//	
+//	@Test
+//	public void testEditarCampoDay() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.editarCampoDay();
+//		}
+//	
+//	@Test
+//	public void testEntrarComDia() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.entrarComDia();
+//		}
+//	
+//	@Test
+//	public void testEditarCampoPassword() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.editarCampoPassword();
+//		}
+//	
+//	@Test
+//	public void testEditarCampoConfirmPassword() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.editarCampoConfirmPassword();
+//		}
+//	
+//	@Test
+//	public void testclicarBotaoSubmit() throws InterruptedException {
+//		    // Chamando o step
+//			registroPage.clicarBotaoSubmit();
+//		}
 	
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 			// Fechando o Browser
-		       driver.close();
+//		       driver.close();
 	}
 }
