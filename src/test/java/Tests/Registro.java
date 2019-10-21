@@ -152,6 +152,6 @@ public class Registro {
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 			// Fechando o Browser
-//		       driver.close();
+		       driver.close();
 	}
 }

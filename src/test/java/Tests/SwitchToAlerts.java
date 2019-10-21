@@ -5,17 +5,14 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import Pages.HomePage;
+import Pages.SwitchToAlertsPage;
 
-import Pages.AlertasPage;
-//import Pages.HomePage;
-//import Pages.RegistroPage;
-
-public class Alertas {
+public class SwitchToAlerts {
 
 	static WebDriver driver;
-//	static RegistroPage registroPage;
-//	static HomePage homePage;
-	static AlertasPage alertasPage;
+	static HomePage homePage;
+	static SwitchToAlertsPage switchToAlertsPage;
 	
 	@BeforeClass
 public static void setUpBeforeClass() throws Exception {
@@ -26,17 +23,16 @@ public static void setUpBeforeClass() throws Exception {
 		driver.get("http://automationtesting.in/");
 		driver.manage() .window() .maximize();
 		// Chamando as paginas
-//		homePage = new HomePage (driver);
-//		registroPage = new RegistroPage (driver);
-		alertasPage = new AlertasPage (driver);
-//		homePage.clicarMenuDemoSite();
+		homePage = new HomePage (driver);
+		switchToAlertsPage = new SwitchToAlertsPage (driver);
+		homePage.clicarMenuDemoSite();
             
 		}
 
 @Test
 public void testAcessarMenuWebTable() throws InterruptedException {
 	    // Chamando o step "Metodo"
-		AlertasPage.();
+		switchToAlertsPage.acessarMenuSwitchTo();
 	}
 
 
