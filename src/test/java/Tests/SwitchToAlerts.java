@@ -24,15 +24,20 @@ public static void setUpBeforeClass() throws Exception {
 		driver.manage() .window() .maximize();
 		// Chamando as paginas
 		homePage = new HomePage (driver);
-		switchToAlertsPage = new SwitchToAlertsPage (driver);
 		homePage.clicarMenuDemoSite();
-            
+		switchToAlertsPage = new SwitchToAlertsPage (driver);
+		            
 		}
 
 @Test
-public void testAcessarMenuWebTable() throws InterruptedException {
+public void testAcessarMenuSwitchTo() throws InterruptedException {
 	    // Chamando o step "Metodo"
 		switchToAlertsPage.acessarMenuSwitchTo();
+		switchToAlertsPage.clicarOpcaoAlerts();
+		switchToAlertsPage.clicarOpcaoTextBox();
+		switchToAlertsPage.clicarButtonBox();
+		switchToAlertsPage.clicarOpcaoOkCancel();
+		switchToAlertsPage.clicarOpcaoWithOK();
 	}
 
 

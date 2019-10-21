@@ -15,8 +15,8 @@ public class HomePage {
 
 	public void clicarMenuDemoSite () throws InterruptedException {
 				
-		WebElement MenuDemoSite = driver.findElement (By.xpath("/html/body/div[1]/div[1]/header/div[2]/div/nav/ul/li[7]/a"));
-		MenuDemoSite.click();
+		WebElement menuDemoSite = driver.findElement (By.xpath("/html/body/div[1]/div[1]/header/div[2]/div/nav/ul/li[7]/a"));
+		menuDemoSite.click();
 		Thread.sleep(2000);
 	
 	}
