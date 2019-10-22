@@ -6,13 +6,13 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import Pages.HomePage;
-import Pages.SwitchToAlertsPage;
+import Pages.SwitchToWindowsPage;
 
-public class SwitchToAlerts {
+public class SwitchToWindows {
 
 	static WebDriver driver;
 	static HomePage homePage;
-	static SwitchToAlertsPage switchToAlertsPage;
+	static SwitchToWindowsPage switchToWindowsPage;
 	
 	@BeforeClass
 public static void setUpBeforeClass() throws Exception {
@@ -25,19 +25,20 @@ public static void setUpBeforeClass() throws Exception {
 		// Chamando as paginas
 		homePage = new HomePage (driver);
 		homePage.clicarMenuDemoSite();
-		switchToAlertsPage = new SwitchToAlertsPage (driver);
+		switchToWindowsPage = new SwitchToWindowsPage (driver);
 		            
 		}
 
 @Test
-public void testAcessarMenuSwitchToAlerts() throws InterruptedException {
+public void testAcessarMenuSwitchToWindows() throws InterruptedException {
 	    // Chamando o step "Metodo"
-		switchToAlertsPage.acessarMenuSwitchToAlerts();
-		switchToAlertsPage.clicarOpcaoAlerts();
-		switchToAlertsPage.clicarOpcaoTextBox();
-		switchToAlertsPage.clicarButtonBox();
-		switchToAlertsPage.clicarOpcaoOkCancel();
-		switchToAlertsPage.clicarOpcaoWithOK();
+		switchToWindowsPage.acessarMenuSwitchToWindows();
+		switchToWindowsPage.clicarOpcaoWindows();
+		switchToWindowsPage.clicarOpcaoMultileWindows();
+		switchToWindowsPage.clicarOpcaoSeparateWindows();
+//		switchToAlertsPage.clicarButtonBox();
+//		switchToAlertsPage.clicarOpcaoOkCancel();
+//		switchToAlertsPage.clicarOpcaoWithOK();
 	}
 
 

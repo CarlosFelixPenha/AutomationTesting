@@ -19,11 +19,11 @@ public SwitchToAlertsPage (WebDriver driver) {
 		   SwitchToAlertsPage.driver = driver;
 		}
 
-public void acessarMenuSwitchTo () throws InterruptedException {
+public void acessarMenuSwitchToAlerts () throws InterruptedException {
 		// Mouse Over
-		WebElement menuSwitchTo = driver.findElement (By.xpath("//*[@id=\"header\"]/nav/div/div[2]/ul/li[4]/a"));
+		WebElement menuSwitchToAlerts = driver.findElement (By.xpath("//*[@id=\"header\"]/nav/div/div[2]/ul/li[4]/a"));
 		Actions act = new Actions (driver);
-		act.moveToElement(menuSwitchTo).perform();
+		act.moveToElement(menuSwitchToAlerts).perform();
 		Thread.sleep(1000);
 		}
 
