@@ -22,7 +22,7 @@ public void acessarMenuSwitchToWindows () throws InterruptedException {
 		WebElement menuSwitchToWindows = driver.findElement (By.xpath("//*[@id=\"header\"]/nav/div/div[2]/ul/li[4]/a"));
 		Actions act = new Actions (driver);
 		act.moveToElement(menuSwitchToWindows).perform();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		}
 
 public void clicarOpcaoWindows () throws InterruptedException {

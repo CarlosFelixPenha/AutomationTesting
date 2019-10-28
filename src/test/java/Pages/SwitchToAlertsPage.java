@@ -45,12 +45,12 @@ public void clicarButtonBox () throws InterruptedException {
 		Thread.sleep(1000);
 		// Colocando nome no PopUp
 		driver.switchTo().alert().sendKeys("Carlos");
-		Thread.sleep(1000);
+		Thread.sleep(300);
 		driver.switchTo().alert().accept();
 		// Comparando o resultado com o esperado!
 		String messageHello = driver.findElement (By.id("demo1")).getText();
 		Assert.assertEquals(messageHello, "Hello Carlos How are you today");
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		}
 
 public void clicarOpcaoOkCancel () throws InterruptedException {
@@ -62,11 +62,11 @@ public void clicarOpcaoOkCancel () throws InterruptedException {
 public void clicarOpcaoWithOK () throws InterruptedException {
 		WebElement opcaoWithOk = driver.findElement (By.xpath("/html/body/div[1]/div/div/div/div[1]/ul/li[1]/a"));
 		opcaoWithOk.click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		// Scroll da Tela
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy (0,400)");
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		}
 
 }
