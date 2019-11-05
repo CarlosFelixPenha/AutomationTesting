@@ -1,51 +1,28 @@
 package Tests;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import Pages.HomePage;
 import Pages.SwitchToWindowsPage;
 
-public class SwitchToWindows {
+public class SwitchToWindows extends BaseTest {
 
-	static WebDriver driver;
-	static HomePage homePage;
 	static SwitchToWindowsPage switchToWindowsPage;
-	
-	@BeforeClass
-public static void setUpBeforeClass() throws Exception {
-		// Mostrar onde se encontra o executavél do Chrome
-		System.setProperty("webdriver.chrome.driver", "C:/drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		// Abrindo o Browser
-		driver.get("http://automationtesting.in/");
-		driver.manage() .window() .maximize();
-		// Chamando as paginas
-		homePage = new HomePage (driver);
-		homePage.clicarMenuDemoSite();
-		switchToWindowsPage = new SwitchToWindowsPage (driver);
-		            
-		}
 
-@Test
-public void testAcessarMenuSwitchToWindows() throws InterruptedException {
-	    // Chamando o step "Metodo"
+	@Test
+	public void testAcessarMenuSwitchToWindows() throws InterruptedException {
+		HomePage homePage = new HomePage(driver);
+		homePage.clicarMenuDemoSite();
+
+		SwitchToWindowsPage switchToWindowsPage = new SwitchToWindowsPage(driver);
+		// Chamando o step "Metodo"
 		switchToWindowsPage.acessarMenuSwitchToWindows();
 		switchToWindowsPage.clicarOpcaoWindows();
 		switchToWindowsPage.clicarOpcaoMultileWindows();
 		switchToWindowsPage.clicarOpcaoSeparateWindows();
-//		switchToAlertsPage.clicarButtonBox();
-//		switchToAlertsPage.clicarOpcaoOkCancel();
-//		switchToAlertsPage.clicarOpcaoWithOK();
+		// switchToAlertsPage.clicarButtonBox();
+		// switchToAlertsPage.clicarOpcaoOkCancel();
+		// switchToAlertsPage.clicarOpcaoWithOK();
 	}
-
-
-@AfterClass
-public static void tearDownAfterClass() throws Exception {
-		// Fechando o Browser
-	       driver.close();
-}
 
 }
