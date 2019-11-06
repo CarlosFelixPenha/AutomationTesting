@@ -17,7 +17,7 @@ public class SwitchToAlerts extends BaseTest {
 		switchToAlertsPage.acessarMenuMoreModals();
 		switchToAlertsPage.clicarOpcaoModals();
 		switchToAlertsPage.clicarBotaoModal();
-		switchToAlertsPage.clicarBotaoModal2();
+//		switchToAlertsPage.clicarBotaoSave();
 		switchToAlertsPage.acessarMenuSwitchToAlerts();
 		switchToAlertsPage.clicarOpcaoAlerts();
 		switchToAlertsPage.clicarOpcaoTextBox();
